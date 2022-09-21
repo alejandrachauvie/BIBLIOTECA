@@ -1,0 +1,161 @@
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Acceso.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\MySql.Data.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\ZstdNet.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.pdb
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\MySql.Data.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Memory.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\MySql.Data.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\ZstdNet.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.pdb
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.xml
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\MySql.Data.xml
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Memory.xml
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Acceso.resources
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\CircularProgressBar.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WinFormAnimation.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\CircularProgressBar.xml
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CargarPantalla.resources
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Socios.resources
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PantPrincipal.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\CircularProgressBar.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\MySql.Data.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WinFormAnimation.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\ZstdNet.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\CircularProgressBar.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.pdb
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\MySql.Data.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Memory.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Acceso.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CargarPantalla.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PantPrincipal.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Socios.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.libros.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\CircularProgressBar.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\MySql.Data.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\WinFormAnimation.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\ZstdNet.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\CircularProgressBar.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.pdb
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\Google.Protobuf.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\MySql.Data.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Memory.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Acceso.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CargarPantalla.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.libros.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PantPrincipal.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Socios.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prestamo.resources
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prestamo.resources
