@@ -15,9 +15,12 @@ namespace WindowsFormsApp1
     {
         private MySqlConnection conexion = new MySqlConnection("server=Localhost ; user id=root; password= ;persistsecurityinfo=True; database=biblio");
         int pos;
+        int socioId;
         public Socios()
         {
             InitializeComponent();
+            buttonEditar.Enabled = false;
+            buttonEliminar.Enabled = false;
         }
 
         private void Socios_Load(object sender, EventArgs e)
@@ -151,6 +154,31 @@ namespace WindowsFormsApp1
                 existe = true;
             conexion.Close();
             return existe;
+        }
+
+        public void Limpiar()
+        {
+            checkBox1.Checked = false;
+            textMatricula.Text = "";
+            textNombre.Text = "";
+            textDpto.Text = "";
+            textApellido.Text = "";
+            textDNI.Text = "";
+            textTelef.Text = "";
+            textDireccion.Text = "";
+            textNumero.Text = "";
+            label16.Text = "";
+            label17.Text = "";
+            label18.Text = "";
+            label31.Text = "";
+            label32.Text = "";
+            label37.Text = "";
+            label38.Text = "";
+            comboEstado.SelectedIndex = 0;
+            comboPiso.SelectedIndex = 0;
+            comboLocalidad.SelectedIndex = 0;
+            comboProv.SelectedIndex = 0;
+            comboPais.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -315,6 +343,7 @@ namespace WindowsFormsApp1
                     MySqlDataReader registro4 = comando3.ExecuteReader();
                     if (registro4.Read())
                     {
+                        socioId = int.Parse(registro4["Soc_Id"].ToString());
                         label18.Text = registro4["Soc_Id"].ToString();//guardo id socio cargado
                     }
                     registro4.Close();
@@ -324,28 +353,13 @@ namespace WindowsFormsApp1
                     MySqlCommand comando4 = new MySqlCommand(sql5, conexion);
                     comando4.Parameters.Add("@monto", MySqlDbType.Decimal).Value = textMatricula.Text;
                     comando4.Parameters.Add("@inscid", MySqlDbType.Int16).Value = label16.Text;
-                    comando4.Parameters.Add("@socioid", MySqlDbType.Int16).Value = label18.Text;
+                    comando4.Parameters.Add("@socioid", MySqlDbType.Int16).Value =socioId;
+                    //  comando4.Parameters.Add("@socioid", MySqlDbType.Int16).Value = label18.Text;
                     comando4.ExecuteNonQuery();
                    
 
                 }
-                checkBox1.Checked = false;
-                textMatricula.Text = "";
-                textNombre.Text = "";
-                textDpto.Text = "";
-                textApellido.Text = "";
-                textDNI.Text = "";
-                textTelef.Text = "";
-                textDireccion.Text = "";
-                textNumero.Text = "";
-                label16.Text = "";
-                label17.Text = "";
-                label18.Text = "";
-                comboEstado.SelectedIndex = 0;
-                comboPiso.SelectedIndex = 0;
-                comboLocalidad.SelectedIndex = 0;
-                comboProv.SelectedIndex = 0;
-                comboPais.SelectedIndex = 0;
+                Limpiar();
 
                 MessageBox.Show("Los datos fueron cargados", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -357,25 +371,35 @@ namespace WindowsFormsApp1
         public void MostrarTabla()
         {
             conexion.Open();
-            string sql = "SELECT Soc_Nombre,Soc_Apellido,Soc_Dni,Soc_Telef,SocEs_Descripcion,Dom_Calle,Dom_Numero,Dom_piso,Dom_Apto,Local_Nombre FROM socio " +
+            string sql = "SELECT Soc_Nombre,Soc_Apellido,Soc_Dni,Soc_Telef,SocEs_Descripcion,Dom_Calle,Dom_Numero,Dom_piso,Dom_Apto,Local_Nombre,Prov_Nombre,Pais_Nombre,InscDet_Monto,InscEs_Descripcion FROM socio  " +
                 "JOIN domicilio ON Dom_Id = Soc_Dom_Id " +
-                "JOIN localidad ON Local_Id " +
-                "JOIN socioestado ON SocEs_Id=Soc_SocEs_Id ";
+                "JOIN localidad ON Local_Id = Dom_Local_Id " +
+                "JOIN provincia ON Prov_Id = Local_Prov_Id " +
+                "JOIN pais ON Pais_Id = Prov_Pais_Id " +
+                "JOIN socioestado ON SocEs_Id = Soc_SocEs_Id " +
+                "JOIN inscripcion ON Insc_Id " +
+                "JOIN inscripciondetalle ON InscDet_Soc_Id = Soc_Id AND InscDet_Insc_Id = Insc_Id " +
+                "JOIN inscripcionestado ON InscEs_Id = Insc_InscEs_Id " +
+                "ORDER BY Soc_Nombre";
             MySqlCommand comando = new MySqlCommand(sql,conexion);
             MySqlDataReader registros = comando.ExecuteReader();
             dataGridView1.Rows.Clear();
             while (registros.Read())
             {
                 dataGridView1.Rows.Add(registros["Soc_Nombre"].ToString(),
-                                       registros["Soc_Apellido"].ToString(),
-                                       registros["Soc_Dni"].ToString(),
-                                       registros["Soc_Telef"].ToString(),
+                                        registros["Soc_Apellido"].ToString(),
+                                        registros["Soc_Dni"].ToString(),
+                                        registros["Soc_Telef"].ToString(),
                                         registros["SocEs_Descripcion"].ToString(),
-                                       registros["Dom_Calle"].ToString(),
-                                       registros["Dom_Numero"].ToString(),
+                                        registros["Dom_Calle"].ToString(),
+                                        registros["Dom_Numero"].ToString(),
                                         registros["Dom_Apto"].ToString(),
                                         registros["Dom_piso"].ToString(),
-                                         registros["Local_Nombre"].ToString());
+                                        registros["Local_Nombre"].ToString(),
+                                        registros["Prov_Nombre"].ToString(),
+                                        registros["Pais_Nombre"].ToString(),
+                                        registros["InscDet_Monto"].ToString(),
+                                        registros["InscEs_Descripcion"].ToString());
             }
             registros.Close();
             conexion.Close();
@@ -453,7 +477,8 @@ namespace WindowsFormsApp1
                 }
             }
             MostrarTabla();
-
+            buttonEditar.Enabled = true;
+            buttonEliminar.Enabled = true;
 
         }
 
@@ -613,25 +638,7 @@ namespace WindowsFormsApp1
             conexion.Close();
             if (cant3 == 1 && cant2==1)
             {
-                checkBox1.Checked = false;
-                textMatricula.Text = "";
-                textNombre.Text = "";
-                textDpto.Text = "";
-                textApellido.Text = "";
-                textDNI.Text = "";
-                textTelef.Text = "";
-                textDireccion.Text = "";
-                textNumero.Text = "";
-                label16.Text = "";
-                label17.Text = "";
-                label18.Text = "";
-                label31.Text = "";
-                label32.Text = "";
-                comboEstado.SelectedIndex = 0;
-                comboPiso.SelectedIndex = 0;
-                comboLocalidad.SelectedIndex = 0;
-                comboProv.SelectedIndex = 0;
-                comboPais.SelectedIndex = 0;
+                Limpiar();
 
                 MessageBox.Show("Los datos fueron actualizados");
 
@@ -641,6 +648,8 @@ namespace WindowsFormsApp1
                 MessageBox.Show("No se pudo actualizar ");
             }
             MostrarTabla();
+            buttonEditar.Enabled = false;
+            buttonEliminar.Enabled = false;
         }
 
      
@@ -717,27 +726,7 @@ namespace WindowsFormsApp1
                 conexion.Close();
                 if (cant3 == 1)
                 {
-                    textDNI.Text = "";
-                    textMatricula.Text = "";
-                    textNombre.Text = "";
-                    textApellido.Text = "";
-                    textDNI.Text = "";
-                    textTelef.Text = "";
-                    textDireccion.Text = "";
-                    textNumero.Text = "";
-                    textDpto.Text = "";
-                    label16.Text = "";
-                    label31.Text = "";
-                    label32.Text = "";
-                    label37.Text = "";
-                    label38.Text = "";
-                    comboEstado.SelectedIndex = 0;
-                    comboPiso.SelectedIndex = 0;
-                    comboLocalidad.SelectedIndex = 0;
-                    comboProv.SelectedIndex = 0;
-                    comboPais.SelectedIndex = 0;
-
-
+                    Limpiar();
                     MessageBox.Show("Se elimino el socio exitosamente!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
                 }
@@ -746,6 +735,8 @@ namespace WindowsFormsApp1
                     MessageBox.Show("No existe socio con ese dni");
                 }
                 MostrarTabla();
+                buttonEditar.Enabled = false;
+                buttonEliminar.Enabled = false;
             }
 
 
@@ -757,7 +748,34 @@ namespace WindowsFormsApp1
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             pos = dataGridView1.CurrentRow.Index;
+            textNombre.Text = dataGridView1[0, pos].Value.ToString();
+            textApellido.Text = dataGridView1[1, pos].Value.ToString();
+            textDNI.Text = dataGridView1[2, pos].Value.ToString();
+            textTelef.Text = dataGridView1[3, pos].Value.ToString();
+            comboEstado.Text = dataGridView1[4, pos].Value.ToString();
+            textDireccion.Text = dataGridView1[5, pos].Value.ToString();
+            textNumero.Text = dataGridView1[6, pos].Value.ToString();
+            textDpto.Text = dataGridView1[7, pos].Value.ToString();
+            comboPiso.Text = dataGridView1[8, pos].Value.ToString();
+            comboLocalidad.Text = dataGridView1[9, pos].Value.ToString();
+            comboProv.Text = dataGridView1[10, pos].Value.ToString();
+            comboPais.Text = dataGridView1[11, pos].Value.ToString();
+            textMatricula.Text = dataGridView1[12, pos].Value.ToString();
+            if (dataGridView1[13, pos].Value.ToString() == "Pago")
+            {
+                checkBox1.Checked=true;
+            }
+            else
+            {
+                checkBox1.Checked = false;
+            }
+            buttonEditar.Enabled = true;
+            buttonEliminar.Enabled = true;
+        }
 
+        private void buttonLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }

@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
 using Application = System.Windows.Forms.Application;
+using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace WindowsFormsApp1
 {
@@ -43,7 +44,11 @@ namespace WindowsFormsApp1
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Desea cerrar sesion ?", "Cerrar", (MessageBoxButton)MessageBoxButtons.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                CerrarSesion();
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -132,8 +137,9 @@ namespace WindowsFormsApp1
 
         private void buttonCerrarSesion_Click(object sender, EventArgs e)
         {
-            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Desea cerrar sesion ?", "Cerrar", (MessageBoxButton)MessageBoxButtons.YesNo);
-            if(messageBoxResult== MessageBoxResult.Yes)
+
+            DialogResult dr = MessageBox.Show("Desea Cerrar Sesion?", "Eliminar", MessageBoxButtons.YesNo);
+            if (dr== DialogResult.Yes)
             {
                 CerrarSesion();
             }
@@ -142,6 +148,28 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
             AbrirFormulario(new Prestamo());
+        }
+
+        private void buttonReportes_Click(object sender, EventArgs e)
+        {
+            panelsubmenu.Visible = true;
+        }
+
+        private void buttonrepPres_Click(object sender, EventArgs e)
+        {
+            panelsubmenu.Visible=false;
+            AbrirFormulario(new ReportePrestamos());
+        }
+
+        private void buttonrepDev_Click(object sender, EventArgs e)
+        {
+            panelsubmenu.Visible = false;
+            AbrirFormulario(new ReportesDevoluciones());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Cuotas());
         }
     }
 

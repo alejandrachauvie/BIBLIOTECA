@@ -144,7 +144,6 @@ C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2
 C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
-C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
 C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Acceso.resources
 C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CargarPantalla.resources
 C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
@@ -159,3 +158,21 @@ C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2
 C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prestamo.resources
 C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prestamo.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ValidarPermisos.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ReportePrestamos.resources
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ReportePrestamos.resources
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ValidarPermisos.resources
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\itextsharp.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\itextsharp.xml
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\itextsharp.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\bin\Debug\itextsharp.xml
+C:\Users\Alejandra\Desktop\respaldo\Ejercicios TP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Devolucion.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Devolucion.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ConsultarDevoluciones.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ReportesDevoluciones.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Cuotas.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PgarCuota.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ReportesIngresos.resources
+C:\Users\Acer\OneDrive\Escritorio\Carreras\Analista de Sistemas\1 sem 3 año\PP2\Biblioteca\Biblioteca\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ReporteMorosos.resources

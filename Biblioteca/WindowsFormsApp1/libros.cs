@@ -21,10 +21,13 @@ namespace WindowsFormsApp1
         int stock;
         int estante;
         int idStock;
+        int pos;
 
         public libros()
         {
             InitializeComponent();
+            buttonEditar.Enabled = false;
+            buttonEliminar.Enabled = false;
         }
 
         public void CargarEstadoLibro()
@@ -173,13 +176,14 @@ namespace WindowsFormsApp1
         public void MostrarTabla()
         {
             conexion.Open();
-            string sql = "SELECT Lib_Titulo,Lib_cantHojas,Lib_Descripcion,LibEs_Descripcion,Aut_Nombre,Edit_Nombre,Esta_Descripcion,Ubic_Descripcion,stock_cantidad FROM libro " +
+            string sql = "SELECT Lib_Titulo,Lib_cantHojas,Lib_Descripcion,LibEs_Descripcion,Aut_Nombre,Edit_Nombre,Esta_Descripcion,Ubic_Descripcion,stock_total FROM libro " +
                 "JOIN libroestado ON LibEs_id = Lib_LibEs_id " +
                 "JOIN autor ON Aut_id = Lib_Aut_id " +
                 "JOIN editorial ON Edit_id = Lib_Edit_id " +
                 "JOIN estante ON Esta_id = Lib_Esta_id " +
                 "JOIN ubicacion ON Ubic_id = Esta_Ubic_id " +
-                "JOIN stock ON stock_id = stock_stock_id";
+                "JOIN stock ON stock_id = stock_stock_id " +
+                "ORDER BY Lib_Titulo";
             MySqlCommand comando = new MySqlCommand(sql, conexion);
             MySqlDataReader registros = comando.ExecuteReader();
             dataGridView1.Rows.Clear();
@@ -193,7 +197,7 @@ namespace WindowsFormsApp1
                                        registros["Edit_Nombre"].ToString(),
                                        registros["Esta_Descripcion"].ToString(),
                                         registros["Ubic_Descripcion"].ToString(),
-                                        registros["stock_cantidad"].ToString());
+                                        registros["stock_total"].ToString());
 
             }
             registros.Close();
@@ -269,6 +273,8 @@ namespace WindowsFormsApp1
             comboubic.SelectedIndex = 0;
             label18.Text = "";
             textCantidad.Text = "";
+            buttonEditar.Enabled = false;
+            buttonEliminar.Enabled = false;
         }
 
 
@@ -280,7 +286,7 @@ namespace WindowsFormsApp1
                 if (Convert.ToInt32(e.Value) <= 3)
                 {
                     e.CellStyle.ForeColor = Color.Red;
-                    e.CellStyle.BackColor = Color.Orange;
+                    e.CellStyle.BackColor = Color.DarkSeaGreen ;
                 }
             }
         }
@@ -329,7 +335,7 @@ namespace WindowsFormsApp1
                 comboubic.Focus();
                 return;
             }
-            if (comboestante.SelectedItem.ToString() == "")
+            if (comboestante.SelectedItem == null)
             {
                 MessageBox.Show("Debe seleccionar N° Estante donde sera guardado el libro", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 comboestante.Focus();
@@ -448,6 +454,8 @@ namespace WindowsFormsApp1
                 }
             }
             MostrarTabla();
+            buttonEditar.Enabled = true;
+            buttonEliminar.Enabled = true;
 
         }
 
@@ -639,6 +647,28 @@ namespace WindowsFormsApp1
                 MostrarTabla();
 
             }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            pos = dataGridView1.CurrentRow.Index;
+            textitulo.Text = dataGridView1[0, pos].Value.ToString();
+            textpag.Text = dataGridView1[1, pos].Value.ToString();
+            textdescripcion.Text = dataGridView1[2, pos].Value.ToString();
+            comboestadolibro.Text = dataGridView1[3, pos].Value.ToString();
+            comboautor.Text = dataGridView1[4, pos].Value.ToString();
+            comboedit.Text = dataGridView1[5, pos].Value.ToString();
+            comboestante.Text = dataGridView1[6, pos].Value.ToString();
+            comboubic.Text = dataGridView1[7, pos].Value.ToString();
+            textCantidad.Text = dataGridView1[8, pos].Value.ToString();
+            buttonEditar.Enabled = true;
+            buttonEliminar.Enabled = true;
+        }
+
+        private void buttonLimpiar_Click(object sender, EventArgs e)
+        {
+            blanquearFormulario();
+
         }
     }
 }

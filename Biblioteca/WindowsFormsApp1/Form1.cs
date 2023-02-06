@@ -127,8 +127,8 @@ namespace WindowsFormsApp1
                     "JOIN usuarioestado ON Usu_UsuEs_id = Usu_UsuEs_id " +
                     "where Usu_Usuario = @Usu_Usuario and Usu_Clave = @Usu_Clave AND Usu_UsuEs_id = 1 ";
                 MySqlCommand comando = new MySqlCommand(sql, conexion);
-                comando.Parameters.Add("Usu_Usuario", MySqlDbType.VarChar).Value = textBox1.Text;
-                comando.Parameters.Add("Usu_Clave", MySqlDbType.VarChar).Value = textBox2.Text;
+                comando.Parameters.Add("@Usu_Usuario", MySqlDbType.VarChar).Value = textBox1.Text;
+                comando.Parameters.Add("@Usu_Clave", MySqlDbType.VarChar).Value = textBox2.Text;
                 MySqlDataReader registro = comando.ExecuteReader();
 
 
@@ -169,5 +169,7 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+     
     }
 }

@@ -33,14 +33,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
-      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
       <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.13.2\lib\itextsharp.xmlworker.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
@@ -77,6 +83,7 @@
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -110,6 +117,24 @@
       <DependentUpon>CargarPantalla.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\VariableUsuario.cs" />
+    <Compile Include="ConsultarDevoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarDevoluciones.Designer.cs">
+      <DependentUpon>ConsultarDevoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuotas.Designer.cs">
+      <DependentUpon>Cuotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devolucion.Designer.cs">
+      <DependentUpon>Devolucion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +154,12 @@
     <Compile Include="PantPrincipal.Designer.cs">
       <DependentUpon>PantPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="PgarCuota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PgarCuota.Designer.cs">
+      <DependentUpon>PgarCuota.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prestamo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,17 +168,56 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteMorosos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMorosos.Designer.cs">
+      <DependentUpon>ReporteMorosos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportePrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportePrestamos.Designer.cs">
+      <DependentUpon>ReportePrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesDevoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesDevoluciones.Designer.cs">
+      <DependentUpon>ReportesDevoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesIngresos.Designer.cs">
+      <DependentUpon>ReportesIngresos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Socios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Socios.Designer.cs">
       <DependentUpon>Socios.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValidarPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidarPermisos.Designer.cs">
+      <DependentUpon>ValidarPermisos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Acceso.resx">
       <DependentUpon>Acceso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CargarPantalla.resx">
       <DependentUpon>CargarPantalla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarDevoluciones.resx">
+      <DependentUpon>ConsultarDevoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuotas.resx">
+      <DependentUpon>Cuotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devolucion.resx">
+      <DependentUpon>Devolucion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -157,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantPrincipal.resx">
       <DependentUpon>PantPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PgarCuota.resx">
+      <DependentUpon>PgarCuota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prestamo.resx">
       <DependentUpon>Prestamo.cs</DependentUpon>
@@ -171,8 +244,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReporteMorosos.resx">
+      <DependentUpon>ReporteMorosos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePrestamos.resx">
+      <DependentUpon>ReportePrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesDevoluciones.resx">
+      <DependentUpon>ReportesDevoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesIngresos.resx">
+      <DependentUpon>ReportesIngresos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Socios.resx">
       <DependentUpon>Socios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidarPermisos.resx">
+      <DependentUpon>ValidarPermisos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -328,6 +416,126 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cerrar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2825038.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\857423.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4379686.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\813078.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vencidos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\585e4beacb11b227491c3399.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\958519.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\272456.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seleccionar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-book1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_resources_ICOM-documents-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\611551.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486564399-close_81512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devolver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devolver1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-book %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentacion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentacion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dev.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libro111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\611552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiempo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagarcuota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportemorosos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddmoroso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dia11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diario 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informe-comercial-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7359283.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
