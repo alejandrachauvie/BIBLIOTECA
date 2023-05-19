@@ -1,0 +1,898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7549EF45-FAE0-4A5F-96C3-0D876AF4CD8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.13.2\lib\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.29\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.29\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.29\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acceso.Designer.cs">
+      <DependentUpon>Acceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarLibro.Designer.cs">
+      <DependentUpon>BuscarLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPrestamo.Designer.cs">
+      <DependentUpon>BuscarPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarSocio.Designer.cs">
+      <DependentUpon>BuscarSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargarEditorialAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarEditorialAutor.Designer.cs">
+      <DependentUpon>CargarEditorialAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargarLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarLibros.Designer.cs">
+      <DependentUpon>CargarLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargarLocalidadescs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarLocalidadescs.Designer.cs">
+      <DependentUpon>CargarLocalidadescs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargarPantalla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarPantalla.Designer.cs">
+      <DependentUpon>CargarPantalla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargarPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarPrestamo.Designer.cs">
+      <DependentUpon>CargarPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargarSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarSocio.Designer.cs">
+      <DependentUpon>CargarSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\VariableUsuario.cs" />
+    <Compile Include="ConsultarDevoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarDevoluciones.Designer.cs">
+      <DependentUpon>ConsultarDevoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuotas.Designer.cs">
+      <DependentUpon>Cuotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devolucion.Designer.cs">
+      <DependentUpon>Devolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="libros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="libros.Designer.cs">
+      <DependentUpon>libros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibrosPresentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrosPresentacion.Designer.cs">
+      <DependentUpon>LibrosPresentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MailService\Mail.cs" />
+    <Compile Include="PantPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantPrincipal.Designer.cs">
+      <DependentUpon>PantPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PgarCuota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PgarCuota.Designer.cs">
+      <DependentUpon>PgarCuota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionPrestamo.Designer.cs">
+      <DependentUpon>PresentacionPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamo.Designer.cs">
+      <DependentUpon>Prestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteMorosos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMorosos.Designer.cs">
+      <DependentUpon>ReporteMorosos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportePrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportePrestamos.Designer.cs">
+      <DependentUpon>ReportePrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesDevoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesDevoluciones.Designer.cs">
+      <DependentUpon>ReportesDevoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesIngresos.Designer.cs">
+      <DependentUpon>ReportesIngresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Socios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Socios.Designer.cs">
+      <DependentUpon>Socios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SociosPresentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SociosPresentacion.Designer.cs">
+      <DependentUpon>SociosPresentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidarPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidarPermisos.Designer.cs">
+      <DependentUpon>ValidarPermisos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Acceso.resx">
+      <DependentUpon>Acceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarLibro.resx">
+      <DependentUpon>BuscarLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPrestamo.resx">
+      <DependentUpon>BuscarPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarSocio.resx">
+      <DependentUpon>BuscarSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargarEditorialAutor.resx">
+      <DependentUpon>CargarEditorialAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargarLibros.resx">
+      <DependentUpon>CargarLibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargarLocalidadescs.resx">
+      <DependentUpon>CargarLocalidadescs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargarPantalla.resx">
+      <DependentUpon>CargarPantalla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargarPrestamo.resx">
+      <DependentUpon>CargarPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargarSocio.resx">
+      <DependentUpon>CargarSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarDevoluciones.resx">
+      <DependentUpon>ConsultarDevoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuotas.resx">
+      <DependentUpon>Cuotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devolucion.resx">
+      <DependentUpon>Devolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="libros.resx">
+      <DependentUpon>libros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrosPresentacion.resx">
+      <DependentUpon>LibrosPresentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantPrincipal.resx">
+      <DependentUpon>PantPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PgarCuota.resx">
+      <DependentUpon>PgarCuota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionPrestamo.resx">
+      <DependentUpon>PresentacionPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamo.resx">
+      <DependentUpon>Prestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReporteMorosos.resx">
+      <DependentUpon>ReporteMorosos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePrestamos.resx">
+      <DependentUpon>ReportePrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesDevoluciones.resx">
+      <DependentUpon>ReportesDevoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesIngresos.resx">
+      <DependentUpon>ReportesIngresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Socios.resx">
+      <DependentUpon>Socios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SociosPresentacion.resx">
+      <DependentUpon>SociosPresentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidarPermisos.resx">
+      <DependentUpon>ValidarPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-hamburger-button-menu-bar-computer-icons-horizontal-line-rectangle-black-internet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persona1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persona11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\socio1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\so.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-user-login-desktop-wallpaper-5b37c6125469e5.9393029115303818423458.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sociophot2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lib.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libro11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\608543.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\socios112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libros-0222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-mulberry-public-library-ask-a-librarian-computer-icons-stifte-text-rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libros-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editorial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentacion111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\565-5650520_featured-article-books-and-star-library-management-system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\432796.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5c790123003fa702a1d2795b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-PNG-Clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Change-PNG-Photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-Disk-PNG-Images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-PNG-Clipart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-Disk-PNG-Images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5c790123003fa702a1d2795b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Change-PNG-Photo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-Disk-PNG-Images2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5c790123003fa702a1d2795b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Change-PNG-Photo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-PNG-Clipart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit-Transparent-Images-PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\736663fe6f9e03fcb39ace9020c42b4c-icono-de-calculadora-estacionaria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2825038.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\857423.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4379686.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\813078.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vencidos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\585e4beacb11b227491c3399.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\958519.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\272456.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seleccionar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-book1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_resources_ICOM-documents-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\611551.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486564399-close_81512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devolver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devolver1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-book %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentacion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentacion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dev.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libro111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\611552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiempo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagarcuota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportemorosos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddmoroso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dia11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diario 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informe-comercial-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7359283.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guarda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiar11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1214594eee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carga_book.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2674b6e19c35834b1135e8e8c3fec5e8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-de-ilustración-color-para-autor-y-poeta-ícono-escritor-amanuensis-editor-biógrafo-ensayista-241372604.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1188503.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="libros\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pluma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pluma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3650377.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus25x25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1022319.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cargarsocio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3788001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\476844.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4116254.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\271310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1572636.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10223191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9005208.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-505495992-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user-group-man-woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compruebe-al-usuario-logo-icon-design-128469980.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\166258.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-plus-sign-icon-cross-symbol-of-safety-guidance-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personal-info-data-user-or-profile-card-details-symbol-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar-client-face-happy-man-person-user-abstract-flat-color-icon-template-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6326055.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\585e4beacb11b227491c3399 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3171065.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-maps-digitalizatec1-417x500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57-575871_our-location-find-us-on-google-maps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2086028.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-maps-digitalizatec1-417x5001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3686852.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\affec54749806d2752556ed7e77378c6-mapa-de-ubicacion-colorido-icono-trazo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21577d05c7812bb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\207008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\207008 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-de-la-literatura-111941349.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editpng1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\260507.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31710651.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-04-30 at 11.16.15.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-04-30 at 11.16.40.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-04-30 at 11.17.52.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-04-30 at 11.16.151.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\235231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\provinser-i-argentina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\428105.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\174233.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\otraimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stack-of-colored-books-3d-render-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1983987-libro-isometrico-illustrato-su-sfondo-bianco-gratuito-vettoriale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trendy-search-book-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1129548321-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-de-descarga-digital-libros-libro-y-flecha-con-161349642.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-09 at 10.42.21.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-09 at 10.43.12.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-09 at 10.43.04.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-09 at 10.47.21.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-09 at 10.42.43.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-09 at 10.49.47.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-09 at 10.53.35.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-09 at 10.54.22.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libroguardar.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-de-actualización-o-recarga-tres-flechas-redondas-rotación-aisladas-sobre-blanco-plano-intercambio-bueno-para-interfaces-218255117.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier-icon-cartoon-zoom-glass-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-09 at 10.47.211.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-09 at 11.26.35.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presrtamobuscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-and-magnifying-glass-illustration-in-3d-isometric-style-vector.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
